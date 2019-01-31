@@ -24,7 +24,7 @@ html {
 body {
   /* TODO: switch background image when not beta mode */
   /* background-image: url("/img/background-blackboard.jpg"); */
-  background-image: url("../img/background-blackboard.jpg");
+  
 
   /* background-size: 100%; */
   max-width: 1170px;
