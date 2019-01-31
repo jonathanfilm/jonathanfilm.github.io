@@ -83,7 +83,7 @@ $(document).ready(function() {
 
         // cycle back to end or beginning if next or prev returns null
         if (newTargetParent.length == 0) {
-            allTargetParents = currentTargetParent.parent().children('div');
+            var allTargetParents = currentTargetParent.parent().children('div');
 
             if (direction == 'previous') {
                 newTargetParent = allTargetParents.last();
