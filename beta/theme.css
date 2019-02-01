@@ -21,33 +21,33 @@ html {
     overflow-y: scroll;
 }
 
+/* Set the main theme colours in the body tag */
 body {
-  /* TODO: switch background image when not beta mode */
-  /* background-image: url("/img/background-blackboard.jpg"); */
-  
-
-  /* background-size: 100%; */
   max-width: 1170px;
   margin: auto;
   padding-left: 1rem;
   padding-right: 1rem;
-  /* background-color: #000; */
-  font-family: Courier, Calibri-light, Ostrich, Helvetica, sans-serif;
+
+  /* Set the main font style here */
+  font-family: 'Montserrat', sans-serif;
   font-size: 12pt;
+  color: hsl(40, 19%, 85%);
+  background-color: black;
 }
 
-.decoration {
-  position: absolute;
-  bottom: -25px;
-  left: -45px;
-  /* width: 10px; */
-  z-index: -1000;
+/* Set the font style for headings */
+/* h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+} */
+
+p {
+  font-family: "Courier New", Courier, monospace;
 }
 
-.decoration img {
-  width: 100px;
-}
-
+/* remove default link colouring */
+/* #bo a {
+  color: inherit;
+} */
 
 /* to fix stupid modal margin right problem in windows */
 #bo.modal-open {
@@ -61,7 +61,7 @@ body {
 
 #bo .modal-content {
   background-color: hsl(0, 0%, 10%);
-  color: hsl(0, 0%, 90%);
+  /* color: hsl(0, 0%, 90%); */
 }
 
 #bo .modal-backdrop.show {
@@ -69,22 +69,22 @@ body {
 }
 
 #bo .modal-content button.close {
-  color: white;
+  color: inherit;
   text-shadow: 0 1px 0 hsl(0, 0%, 15%);
 }
 
 #bo .modal-header {
-  border-bottom: 1px solid hsl(0, 0%, 30%);
+  border-bottom: 1px solid;
 }
 
 #bo .modal-footer {
-  border-top: 1px solid hsl(0, 0%, 30%);
+  border-top: 1px solid;
   display: block;
   text-align: center;
 }
 
 #bo .modal-footer a {
-  color: hsl(0, 0%, 70%)
+  color: inherit;
 }
 
 #modal-title {
@@ -94,7 +94,7 @@ body {
 }
 
 #modal-credits {
-  color: hsl(0, 0%, 70%);
+  /* color: hsl(0, 0%, 70%); */
   font-style: italic;
   text-align: right;
   font-size: 0.9em;
@@ -114,13 +114,13 @@ body {
   display: block;
   text-align: center;
   /* font-size: 0.4em; */
-  color: hsl(360, 0%, 50%);
-  font-family: 'Montserrat', sans-serif;
+  /* color: hsl(360, 0%, 50%); */
+  /* font-family: 'Montserrat', sans-serif; */
 }
 
 .nav-item {
   font-size: 1.3em;
-  font-family: 'Montserrat', sans-serif;
+  /* font-family: 'Montserrat', sans-serif; */
 }
 
 #bo .nav-link,
@@ -142,23 +142,15 @@ body {
   outline: 0;
 }
 
-.portfolio-box {
+#bo .portfolio-box {
   position: relative;
   display: block;
   /* max-width: 650px; */
   margin: 0 auto;
+  color: inherit;
 }
 
-.portfolio-box-caption {
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-.portfolio-box-caption-content {
+#bo .portfolio-box-caption {
   pointer-events: none;
   position: absolute;
   bottom: 0%;
@@ -169,19 +161,13 @@ body {
   /* transform: translateY(-50%); */
 }
 
-.portfolio-box-caption-content h3 {
+#bo .portfolio-box-caption h3 {
   margin: 0;
   font-size: 1em;
-  color: hsl(360, 0%, 80%);
   text-align: center;
-  /* font-variant: small-caps; */
-  /* font-family: "Trebuchet MS", "Tahoma"; */
 }
 
-.portfolio-box-caption-content > * {
-  color: white;
-}
-
+/* Hide content only displayed in modal */
 .project-description,
 .project-credits,
 .project-content {
@@ -201,41 +187,59 @@ body {
   text-align: center; */
 }
 
-.social-icon a {
+#bo .social-icon a {
   display: table-cell;
   vertical-align: middle;
   text-align: center;
   width: 3em;
   height: 3em;
   /* line-height: 3em; */
-  border: 4px solid hsl(360, 0%, 95%);
+  color: inherit;
+  border: 4px solid;
   border-radius: 50%;
-  color: #000; /* social icon color */
+  /* color: #000; /* social icon color */ */
   transition: all 0.2s;
 }
 
-.email-colour:hover {
+#email:hover {
   border-color: #ffa500;
-  /* color: #fff; /* social icon hover color */ */
+  /* color: #fff; */
   transition: border 0.2s;
 }
-.facebook-colour:hover {
+#twitter:hover {
+  border-color: #1da1f2;
+  /* color: #fff; */
+  transition: border 0.2s;
+}
+#facebook:hover {
   border-color: #3b5998;
-  /* color: #fff; /* social icon hover color */ */
+  /* color: #fff; */
   transition: border 0.2s;
 }
-.vimeo-colour:hover {
+#vimeo:hover {
   border-color: #1ab7ea;
-  /* color: #fff; /* social icon hover color */ */
+  /* color: #fff; */
   transition: border 0.2s;
 }
-.linkedin-colour:hover {
+#linkedin:hover {
   border-color: #0976b4;
-  /* color: #fff; /* social icon hover color */ */
+  /* color: #fff; */
   transition: border 0.2s;
 }
-.instagram-colour:hover {
-  border-color: #bc2a8d;
-  /* color: #fff; /* social icon hover color */ */
+#instagram:hover {
+  border-color: #c13584;
+  /* color: #fff; */
   transition: border 0.2s;
+}
+
+.doodle {
+  position: absolute;
+  bottom: -25px;
+  left: -45px;
+  /* width: 10px; */
+  z-index: -1000;
+}
+
+.doodle img {
+  width: 100px;
 }
