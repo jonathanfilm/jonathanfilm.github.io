@@ -2,7 +2,9 @@ $(document).ready(function() {
 
 
     'use strict';
-    ///////////////// Modal preview //////////////////
+
+
+    ///////////////// MODAL PREVIEW //////////////////
 
     // modal variables
     var currentTarget;
@@ -97,6 +99,20 @@ $(document).ready(function() {
 
         return newTarget;
     }
+    // END OF MODAL PREVIEW
+
+
+    // Button text toggler using 'd-none' from Bootrap and custom 'not-hidden' identifier
+    $('.toggler').on('click', function () {
+
+        var visibleChildren = $(this).children('.not-hidden');
+        var hiddenChildren = $(this).children('.d-none');
+
+        // TODO: use toggleClass instead
+        visibleChildren.removeClass('not-hidden').addClass('d-none');
+        hiddenChildren.removeClass('d-none').addClass('not-hidden');
+
+    });
 
 
 
