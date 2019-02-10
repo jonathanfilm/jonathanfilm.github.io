@@ -56,7 +56,7 @@ $(document).ready(function() {
         var modal = $('#previewModal');
         // check if video link exists --> if not
         var contentElement = target.find('.project-content').find('iframe').attr('src');
-        if (contentElement.length == 0) {
+        if (contentElement == "#") {
             content = videoPlaceholder;
         } else {
             content = target.find('.project-content').html(); // Extract info from object
@@ -105,12 +105,7 @@ $(document).ready(function() {
     // Button text toggler using 'd-none' from Bootrap and custom 'not-hidden' identifier
     $('.toggler').on('click', function () {
 
-        var visibleChildren = $(this).children('.not-hidden');
-        var hiddenChildren = $(this).children('.d-none');
-
-        // TODO: use toggleClass instead
-        visibleChildren.removeClass('not-hidden').addClass('d-none');
-        hiddenChildren.removeClass('d-none').addClass('not-hidden');
+        $(this).children().toggleClass('d-none not-hidden');
 
     });
 
