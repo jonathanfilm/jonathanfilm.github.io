@@ -94,16 +94,10 @@ p {
 }
 
 
-
-.brand {
-  font-variant: small-caps;
-  letter-spacing: 0.2em;
-}
-
 .navbar-brand small {
   display: block;
   text-align: center;
-  /* font-size: 0.4em; */
+  font-size: 0.6em;
   /* color: hsl(360, 0%, 50%); */
   /* font-family: 'Montserrat', sans-serif; */
 }
