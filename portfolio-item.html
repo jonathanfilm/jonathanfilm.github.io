@@ -1,0 +1,23 @@
+<div class="col-sm-6 col-lg-4 p-3">
+  <a class="portfolio-box" data-toggle="modal" data-target="#previewModal" href="#">
+    <img src="/img/thumbs/{portfolio_item.Thumbnail}" class="img-fluid" alt="Responsive image">
+    <div class="portfolio-box-caption">
+      <h3 class="project-title">
+        {portfolio_item.Title}
+      </h3>
+      <p class="project-credits">
+        {portfolio_item.Credits}
+      </p>
+      <p class="project-description">
+        {portfolio_item.Description}
+      </p>
+      <div class="project-content">
+        <!-- set the correct aspect ratio here -->
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item" src="{portfolio_item.URL}" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+    <!-- <span class="badge badge-secondary">Coming soon</span> -->
+  </a>
+</div>
