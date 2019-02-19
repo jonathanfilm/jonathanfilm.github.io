@@ -14,7 +14,8 @@ body {
   padding-right: 1rem;
 
   /* Set the main font style here */
-  font-family: 'Montserrat', sans-serif;
+  /* font-family: 'Montserrat', sans-serif; */
+  font-family: 'Inconsolata', monospace;
   font-size: 12pt;
   color: hsl(40, 19%, 85%);
   background-color: black;
@@ -23,7 +24,7 @@ body {
 
 /* Set the style for paragraph text */
 p {
-  font-family: "Courier New", Courier, monospace;
+  /* font-family: "Courier New", Courier, monospace; */
 }
 
 #bo .muted-colour {
@@ -185,6 +186,12 @@ p {
   transition: all 0.3s;
 }
 
+
+.footer {
+  padding-top: 9rem;
+  padding-bottom: 1rem;
+}
+
 #email:hover {
   color: #ffa500;
 }
@@ -206,13 +213,13 @@ p {
 
 
 .doodle {
-  position: absolute;
-  bottom: -25px;
-  left: -45px;
-  /* width: 10px; */
-  z-index: -1000;
+  /* position: absolute; */
+  /* bottom: -25px; */
+  /* left: -45px; */
+  /* z-index: -1000; */
 }
 
 .doodle img {
-  width: 100px;
+  filter: opacity(30%);
+  width: 200px;
 }
