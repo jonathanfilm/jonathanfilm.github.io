@@ -5,6 +5,17 @@ html {
 
 /* Set the main theme colours in the body tag */
 body {
+
+  /* Set the main font style here */
+  /* font-family: 'Montserrat', sans-serif; */
+  font-family: 'Inconsolata', monospace;
+  font-size: 12pt;
+  color: hsl(40, 19%, 85%);
+  /* fall back background */
+  background-color: black;
+}
+
+#background-2 {
   /* limit width of content on large screens */
   max-width: 1170px;
   /* center content */
@@ -13,12 +24,6 @@ body {
   padding-left: 1rem;
   padding-right: 1rem;
 
-  /* Set the main font style here */
-  /* font-family: 'Montserrat', sans-serif; */
-  font-family: 'Inconsolata', monospace;
-  font-size: 12pt;
-  color: hsl(40, 19%, 85%);
-  background-color: black;
 }
 
 
