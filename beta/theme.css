@@ -91,8 +91,9 @@ p {
   /* text-align: center; */
 }
 
-#modal-description {
-
+#modal-description,
+#modal-credits {
+  white-space: pre-line;
 }
 
 #modal-credits {
