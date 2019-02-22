@@ -13,9 +13,7 @@ body {
   color: hsl(40, 19%, 85%);
   /* fall back background */
   background-color: black;
-}
 
-#background-2 {
   /* limit width of content on large screens */
   max-width: 1170px;
   /* center content */
@@ -23,6 +21,11 @@ body {
   /* increase content padding and fix modal 'bug' */
   padding-left: 1rem;
   padding-right: 1rem;
+
+
+}
+
+#background-2 {
 
 }
 
