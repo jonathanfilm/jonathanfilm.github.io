@@ -49,19 +49,17 @@ with open(csv_file, newline='') as f:
             col_URL = col_headers.index('URL')
             URL = row[col_URL]
 
+            # format URLs for html embed based on type
             if URL == '':
-                URL = '#'
+                row[col_URL] = '#'
 
             elif URL[:17] == 'https://vimeo.com':
-                URL = ("https://player.vimeo.com/video"
+                row[col_URL] = ("https://player.vimeo.com/video"
                 + URL[17:]
                 + "?color=ffffff&title=0&byline=0&portrait=0")
 
-                row[col_URL] = URL
-
             elif URL[:16] == 'https://youtu.be':
-                URL = "https://www.youtube-nocookie.com/embed" + URL[16:]
-                row[col_URL] = URL
+                row[col_URL] = "https://www.youtube-nocookie.com/embed" + URL[16:]
 
             else:
                 print("Unrecognised portfolio URL")
