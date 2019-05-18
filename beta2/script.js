@@ -4,6 +4,23 @@ $(document).ready(function() {
     'use strict';
 
 
+    ////// contact form functions //////
+
+    function submitToAPI(e) {
+       e.preventDefault();
+       var URL = "https://d9eyapuh39.execute-api.eu-west-1.amazonaws.com/test";
+
+            var Namere = /[A-Za-z]{1}[A-Za-z]/;
+            if (!Namere.test($("#name").val())) {
+                         alert ("Name can not be less than 2 characters");
+                return;
+            }
+            if ($("#senderEmail").val()=="") {
+                alert ("Please enter your email id");
+                return;
+            }
+        }
+
     ///////////////// MODAL PREVIEW //////////////////
 
     // modal variables
