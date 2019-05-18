@@ -1,0 +1,553 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Jonathan Eve - Filmmaker</title>
+  <link rel="icon" href="/img/favicon.png">
+
+  <!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="theme.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+</head>
+
+<!-- Page start -->
+
+<!-- page container class to allow boostrap css overide by increasing specifity -->
+<body id="bo" style="background-image: url('/img/background-blackboard.jpg');">
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="previewModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content" style="background-image: url('/img/background-blackboard.jpg');">
+        <div class="modal-header">
+          <h5 id="modal-title">[project title]</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true"><i class="far fa-times"></i></span>
+          </button>
+        </div>
+        <div class="modal-body" id="modal-video">
+          <!-- Video placeholder when no video link exists -->
+          <img src="/img/video-coming-soon-placeholder.gif" class="img-fluid" alt="Responsive image">
+        </div>
+        <div class="modal-body">
+          <a href="#" class="toggler muted-colour" role="button" data-toggle="collapse" data-target="#modal-description" aria-expanded="false" aria-controls="modal-description">
+            Description
+            <span class="not-hidden"><i class="fas fa-caret-right"></i></span>
+            <span class="d-none"><i class="fas fa-caret-down"></i></span>
+          </a>
+          <div id="modal-description" class="collapse">
+            <p>[project description]</p>
+          </div>
+
+          <div class="text-right">
+            <button class="btn btn-sm toggler muted-colour" type="button" data-toggle="collapse" data-target="#modal-credits" aria-expanded="false" aria-controls="modal-credits">
+              <span class="not-hidden">+ show credits</span>
+              <span class="d-none">- hide credits</span>
+            </button>
+            <div id="modal-credits" class="collapse">
+              <p>[project credits]</p>
+            </div>
+          </div>
+
+        </div>
+        <div class="modal-footer">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-6 text-left">
+                <a id="prevButton" href="#">&lt; previous</a>
+              </div>
+              <div class="col-6 text-right">
+                <a id="nextButton" href="#">next &gt;</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Navigation menu -->
+
+  <div class="navbar-container mt-3 mb-5">
+    <nav class="navbar navbar-expand-md navbar-dark">
+      <!-- TODO: add ref to homepage for brand -->
+      <a class="navbar-brand" href="#">
+        <!-- <span class="brand">Jonathan Eve</span> -->
+        <span class="brand">
+          <img src="/img/jonathan-eve-logo.png" alt="Jonathan Eve" width="300">
+        </span>
+        <small>Self-shooting filmmaker &middot; Original soundtracks</small>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+<!-- TODO: navbar-nav remove? to stop colour -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="ml-auto nav nav-tabs navbar-nav" id="myTab" role="tablist">
+          <li class="nav-item text-right">
+            <a class="nav-link active" id="portfolio-tab" data-toggle="tab" href="#portfolio" role="tab" aria-controls="portfolio" aria-selected="true">portfolio</a>
+          </li>
+          <li class="nav-item text-right">
+            <a class="nav-link" id="about-tab" data-toggle="tab" href="#about" role="tab" aria-controls="about" aria-selected="false">about</a>
+          </li>
+          <li class="nav-item text-right">
+            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+
+
+  <div class="tab-content">
+
+
+    <!-- Portfolio section -->
+    <!-- TODO: key shots on video page? with explanation with film tape decoration/border -->
+    <section class="container-fluid mt-4 tab-pane fade show active" id="portfolio" role="tabpanel" aria-labelledby="portfolio-tab">
+      <div class="row">
+
+        <!-- Portfolio item -->
+        <div class="col-sm-6 col-lg-4 p-3">
+          <a class="portfolio-box" data-toggle="modal" data-target="#previewModal" href="#">
+            <img src="/img/thumbs/drowning-in-an-automated-sea.png" class="img-fluid" alt="Responsive image">
+            <div class="portfolio-box-caption">
+              <h3 class="project-title">
+                Drowning in an automated sea
+              </h3>
+              <p class="project-credits">
+                Camera, sound, editing & music by Jonathan Eve <br>
+                with thanks to Greg Bevan <br>
+                Aberystwyth University TFTS Alumni Access Scheme
+              </p>
+              <p class="project-description">
+                scenes between Aberystwyth and Aberaeron, shot on a spring-wound 16mm Bolex, developed and digitised at the University of Aberystwyth
+              </p>
+              <div class="project-content">
+                <!-- set the correct aspect ratio here -->
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/298009105?color=ffffff&title=0&byline=0&portrait=0" allowfullscreen></iframe>
+                </div>
+              </div>
+            </div>
+            <!-- <span class="badge badge-secondary">Coming soon</span> -->
+          </a>
+        </div>
+
+        <!-- Portfolio item -->
+        <div class="col-sm-6 col-lg-4 p-3">
+          <a class="portfolio-box" data-toggle="modal" data-target="#previewModal" href="#">
+            <img src="/img/thumbs/bristol-around-the-clock.png" class="img-fluid" alt="Responsive image">
+            <div class="portfolio-box-caption">
+              <h3 class="project-title">
+                Bristol - Around the Clock
+              </h3>
+              <p class="project-credits">
+                Camera, sound, editing & music by Jonathan Eve
+              </p>
+              <p class="project-description">
+                Bristol: The people and the City, from dawn till late – in 90 seconds.
+              </p>
+              <div class="project-content">
+                <!-- set the correct aspect ratio here -->
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/245193532?color=ffffff&title=0&byline=0&portrait=0" allowfullscreen></iframe>
+
+                  <!-- <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/245193532?color=ffffff&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script> -->
+
+                </div>
+              </div>
+            </div>
+            <!-- <span class="badge badge-secondary">Coming soon</span> -->
+          </a>
+        </div>
+
+        <!-- Portfolio item -->
+        <div class="col-sm-6 col-lg-4 p-3">
+          <a class="portfolio-box" data-toggle="modal" data-target="#previewModal" href="#">
+            <img src="/img/thumbs/connectivity-scene3-reel2.png" class="img-fluid" alt="Responsive image">
+            <div class="portfolio-box-caption">
+              <h3 class="project-title">
+                Connectivity
+              </h3>
+              <p class="project-credits">
+                Camera, sound, editing & music by Jonathan Eve
+              </p>
+              <div class="project-description">
+                Originally created as a video installation, two screens facing each other held an audience enclosed in a moment of connectivity between pairs of living beings, separated by a vast stretch of space. Music made from found sounds taken directly from their environments.
+              </div>
+              <div class="project-content">
+                <!-- set the correct aspect ratio here -->
+                <div class="embed-responsive embed-responsive-21by9">
+                  <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/252597766?color=ffffff&title=0&byline=0&portrait=0" allowfullscreen></iframe>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Portfolio item -->
+        <div class="col-sm-6 col-lg-4 p-3">
+          <a class="portfolio-box" data-toggle="modal" data-target="#previewModal" href="#">
+            <img src="/img/thumbs/evolutionary-tree.png" class="img-fluid" alt="Responsive image">
+            <div class="portfolio-box-caption">
+              <h3 class="project-title">
+                Evolutionary Tree
+              </h3>
+              <p class="project-credits">
+                Voice-over by David McGoran <br>
+                Illustration by Laurie Stansfield <br>
+                Sound & editing by Jonathan Eve
+              </p>
+              <p class="project-description">
+                A Rusty Squid film <br>
+                This short animation captures the evolutionary tree principle that is fundamental to Rusty Squid’s robotic design practice.
+              </p>
+              <div class="project-content">
+                <!-- set the correct aspect ratio here -->
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" src="#" allowfullscreen></iframe>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Portfolio item -->
+        <div class="col-sm-6 col-lg-4 p-3">
+          <a class="portfolio-box" data-toggle="modal" data-target="#previewModal" href="#">
+            <img src="/img/thumbs/making-waves.png" class="img-fluid" alt="Responsive image">
+            <div class="portfolio-box-caption">
+              <h3 class="project-title">
+                Making Waves
+              </h3>
+              <p class="project-credits">
+                Directed by David McGoran <br>
+                Cinematography by Adam Laity <br>
+                Additional camerawork, editing & original score by Jonathan Eve
+              </p>
+              <p class="project-description">
+                A Rusty Squid Film <br>
+                In 2016, Rusty Squid designed and fabricated a mechanical sculpture for the M Shed museum in Bristol, reminding us of our industrial past.
+              </p>
+              <div class="project-content">
+                <!-- set the correct aspect ratio here -->
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" src="#" allowfullscreen></iframe>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Portfolio item -->
+        <div class="col-sm-6 col-lg-4 p-3">
+          <a class="portfolio-box" data-toggle="modal" data-target="#previewModal" href="#">
+            <img src="/img/thumbs/exploring-time.png" class="img-fluid" alt="Responsive image">
+            <div class="portfolio-box-caption">
+              <h3 class="project-title">
+                Exploring Time
+              </h3>
+              <p class="project-credits">
+                Camera, sound, editing & music by Jonathan Eve
+              </p>
+              <p class="project-description">
+                An experimental reflection on time, space and memory.
+              </p>
+              <div class="project-content">
+                <!-- set the correct aspect ratio here -->
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/132607721?color=ffffff&title=0&byline=0&portrait=0" allowfullscreen></iframe>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Portfolio item -->
+        <div class="col-sm-6 col-lg-4 p-3">
+          <a class="portfolio-box" data-toggle="modal" data-target="#previewModal" href="#">
+            <img src="/img/thumbs/heart-in-your-hands.png" class="img-fluid" alt="Responsive image">
+            <div class="portfolio-box-caption">
+              <h3 class="project-title">
+                Heart in Your Hands
+              </h3>
+              <p class="project-credits">
+                Directed by David McGoran <br>
+                Cinematography by Adam Laity <br>
+                Additional camerawork by James Dalby & Jonathan Eve <br>
+                Edited by James Dalby & Jonathan Eve <br>
+                Original music by Jonathan Eve
+              </p>
+              <p class="project-description">
+                A Rusty Squid Film <br>
+                Documentary on the design and fabrication of robotic hearts.
+              </p>
+              <div class="project-content">
+                <!-- set the correct aspect ratio here -->
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" src="#" allowfullscreen></iframe>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Portfolio item -->
+        <div class="col-sm-6 col-lg-4 p-3">
+          <a class="portfolio-box" data-toggle="modal" data-target="#previewModal" href="#">
+            <img src="/img/thumbs/motion-equals-emotion.png" class="img-fluid" alt="Responsive image">
+            <div class="portfolio-box-caption">
+              <h3 class="project-title">
+                Motion equals Emotion
+              </h3>
+              <p class="project-credits">
+                Voice-over by David McGoran <br>
+                Camera, sound, editing & music by Jonathan Eve <br>
+                Additional footage by James Dalby and Adam Laity
+              </p>
+              <p class="project-description">
+                “As we dive into this century, we’ll be entering a landscape where the boundaries between humanity, nature and technology start to blur.” <br>
+                David McGoran, a robotic engineer and designer tells the story of Rusty Squid, a studio for robotic art and design, based in Bristol.
+              </p>
+              <div class="project-content">
+                <!-- set the correct aspect ratio here -->
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/266889325?color=ffffff&title=0&byline=0&portrait=0" allowfullscreen></iframe>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Portfolio item -->
+        <div class="col-sm-6 col-lg-4 p-3">
+          <a class="portfolio-box" data-toggle="modal" data-target="#previewModal" href="#">
+            <img src="/img/thumbs/projected-algorithms.png" class="img-fluid" alt="Responsive image">
+            <div class="portfolio-box-caption">
+              <h3 class="project-title">
+                Projected Algorithms
+              </h3>
+              <p class="project-credits">
+                CVoice-over by David McGoran <br>
+                Camera and Editing by James Dalby <br>
+                Sound & music by Jonathan Eve
+              </p>
+              <p class="project-description">
+                A Rusty Squid film <br>
+                Robotic engineer and designer David McGoran from Rusty Squid, explains the importance of designing new algorithms.
+              </p>
+              <div class="project-content">
+                <!-- set the correct aspect ratio here -->
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/AFolFqjvFXk" allowfullscreen></iframe>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Portfolio item -->
+        <div class="col-sm-6 col-lg-4 p-3">
+          <a class="portfolio-box" data-toggle="modal" data-target="#previewModal" href="#">
+            <div class="doodle">
+              <img src="/img/illustrations/pine-marten.png" alt="Hand drawn illustration of a pine marten">
+            </div>
+            <img src="/img/thumbs/restoring-the-pine-marten.png" class="img-fluid" alt="Responsive image">
+            <div class="portfolio-box-caption">
+              <h3 class="project-title">
+                Restoring the Pine Marten to England and Wales
+              </h3>
+              <p class="project-credits">
+                Produced by Hilary Macmillan <br>
+                Camera and editing by Jonathan Eve
+              </p>
+              <p class="project-description">
+                A Vincent Wildlife Trust film <br>
+                The pine marten was once common across much of Britain, but is now one of our rarest mammals. Today, the pine marten population is increasing its range in Scotland, but in the rest of Britain it is considered to be functionally extinct. The Vincent Wildlife Trust has embarked on a major recovery project to bring the pine marten back to England and Wales.
+              </p>
+              <div class="project-content">
+                <!-- set the correct aspect ratio here -->
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/108462659?color=ffffff&title=0&byline=0&portrait=0" allowfullscreen></iframe>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Portfolio item -->
+        <div class="col-sm-6 col-lg-4 p-3">
+          <a class="portfolio-box" data-toggle="modal" data-target="#previewModal" href="#">
+            <img src="/img/thumbs/tea-break-murder.png" class="img-fluid" alt="Responsive image">
+            <div class="portfolio-box-caption">
+              <h3 class="project-title">
+                Tea Break Murder
+              </h3>
+              <p class="project-credits">
+                Camera, sound, editing & music by Jonathan Eve
+              </p>
+              <p class="project-description">
+                University project <br>
+                Peter Voncamp is a passionate filmmaker, contented until he finds his beloved tea-lady murdered. Taking matters into his own hands, he interrogates some of his key suspects, but it becomes clear that the reality of the situation is not as expected.
+              </p>
+              <div class="project-content">
+                <!-- set the correct aspect ratio here -->
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/133131252?color=ffffff&title=0&byline=0&portrait=0" allowfullscreen></iframe>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Portfolio item -->
+        <div class="col-sm-6 col-lg-4 p-3">
+          <a class="portfolio-box" data-toggle="modal" data-target="#previewModal" href="#">
+            <img src="/img/thumbs/wild-in-wales.png" class="img-fluid" alt="Responsive image">
+            <div class="portfolio-box-caption">
+              <h3 class="project-title">
+                Wild in Wales
+              </h3>
+              <p class="project-credits">
+                Produced by Hilary Macmillan <br>
+                Directed by Jonathan Eve <br>
+                Camera and editing by Jonathan Eve
+              </p>
+              <p class="project-description">
+                BA Vincent Wildlife Trust film <br>
+                A short documentary about the return of the pine marten in England and Wales.
+                “To think that they have come back to mid Wales, not far from my home, I tell you it is like welcoming back an old friend really. I dream of the day when I can walk along here and actually see a pine marten so I am so happy about this.”
+                Iolo Williams, Naturalist & Broadcaster
+              </p>
+              <div class="project-content">
+                <!-- set the correct aspect ratio here -->
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/168819064?color=ffffff&title=0&byline=0&portrait=0" allowfullscreen></iframe>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+
+
+
+    <!-- About section -->
+
+    <section class="container-fluid tab-pane fade mt-4" id="about" role="tabpanel" aria-labelledby="about-tab">
+      <div class="row">
+        <div class="col-sm-6 p-2 text-center">
+          <img src="/img/jonathan-developing-film.jpg" class="img-fluid" alt="Photo of Jonathan developing film">
+          <caption>Developing film for Drowning in an automated sea.</caption>
+        </div>
+        <div class="col-sm-6 p-2 text-center">
+          <p>I’m a Bristol based filmmaker, with a specialism in sound.</p>
+          <p>For clients, I storyboard, shoot, edit, and produce custom soundtracks. Mostly short form docs and promotional content.</p>
+          <p>Recent clients include Vincent Wildlife Trust, Rusty Squid and the University of Bristol.</p>
+          <p>I have experience in analogue film which I use in experimental projects.</p>
+          <p>Day rate is £150.</p>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Contact -->
+
+    <section class="container tab-pane fade mt-4" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+      <div class="row justify-content-center">
+        <div class="col-sm-8 col-lg-8 p-2">
+          <form autocomplete="off" target="_blank" action="https://docs.google.com/forms/d/e/1FAIpQLSfS8g7ffipWPxZmZZhmHDQXSN7EUesu1B0ZSvLdOjTOehpx7Q/formResponse">
+            <div class="form-group row">
+              <label for="recipientEmail" class="col col-form-label">Contact me</label>
+              <input type="email" class="col-md-9 form-control-plaintext" id="recipientEmail" value="jonathandeve@gmail.com" readonly>
+            </div>
+            <div class="form-group row">
+              <label for="name" class="col-md-3 col-form-label">Your name</label>
+              <input name="entry.1300844360" type="text" class="col-md-9 form-control" id="name" placeholder="Optional">
+            </div>
+            <div class="form-group row">
+              <label for="senderEmail" class="col col-form-label">Email address</label>
+              <div class="col-md-9 p-0">
+                <input name="entry.220235027" type="email" class="form-control" id="senderEmail" aria-describedby="emailHelp" placeholder="Please provide your email if you would like a response">
+                <small id="emailHelp" class="form-text text-muted">Your email will never be shared with anyone else.</small>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="subject" class="col col-form-label">Subject</label>
+              <input name="entry.937007608" type="text" class="col-md-9 form-control" id="subject" placeholder="Required">
+            </div>
+            <div class="form-group row">
+              <label for="messageBox" class="col col-form-label">Message</label>
+              <textarea name="entry.117788099" class="col-md-9 form-control" id="messageBox" placeholder="Required" rows="5"></textarea>
+            </div>
+            <div class="row justify-content-end">
+              <div class="custom-control custom-checkbox col-md-9">
+                <input name="entry.946596164_sentinel" type="checkbox" class="custom-control-input" id="mailingList">
+                <label class="custom-control-label" for="mailingList">Tick the box if you would like to receive an email when a new film is released</label>
+              </div>
+            </div>
+            <div class="form-group text-right">
+              <button type="submit" class="btn btn-primary">Send</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Social icons -->
+
+  <footer class="footer">
+    <ul class="list-unstyled list-inline social-icon text-center my-5">
+      <li class="list-inline-item">
+        <a id="vimeo" href="https://vimeo.com/user37777984" target="_blank">
+          <i class="fab fa-vimeo-v"></i>
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a id="instagram" href="" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a id="twitter" href="" target="_blank">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    </ul>
+
+
+    <!-- Copyright -->
+    <!-- TODO: add automatic date in python code -->
+    <div class="footer-copyright text-center my-5 muted-colour">
+      <small>Copyright © 2018 Jonathan Eve - designed by <a href="#">Engineerio</a></small>
+    </div>
+
+  </footer>
+
+
+
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  <script src="script.js"></script>
+  
+</body>
+</html>

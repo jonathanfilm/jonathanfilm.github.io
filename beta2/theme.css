@@ -1,0 +1,218 @@
+html {
+  /* TODO: what is this for? */
+    overflow-y: scroll;
+}
+
+/* Set the main theme colours in the body tag */
+body {
+  /* limit width of content on large screens */
+  max-width: 1170px;
+  /* center content */
+  margin: auto;
+  /* increase content padding and fix modal 'bug' */
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+  /* Set the main font style here */
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12pt;
+  color: hsl(40, 19%, 85%);
+  background-color: black;
+}
+
+
+/* Set the style for paragraph text */
+p {
+  font-family: "Courier New", Courier, monospace;
+}
+
+#bo .muted-colour {
+  color: hsl(40, 7%, 30%);
+}
+
+
+/* remove default link colouring */
+/* #bo a {
+  color: inherit;
+} */
+
+/* to fix stupid modal margin right problem in windows */
+#bo.modal-open {
+  padding-right: 1rem !important;
+}
+
+#bo.modal-open .container-fluid img {
+  filter: grayscale(100%);
+  transition: filter 2s;
+}
+
+#bo .modal-content {
+  color: hsl(40, 14%, 65%);
+  background-color: hsl(0, 0%, 10%);
+  border: solid;
+  /* color: hsl(0, 0%, 90%); */
+}
+
+#bo .modal-backdrop.show {
+  opacity: 0.7;
+}
+
+#bo .modal-content button.close {
+  color: inherit;
+  text-shadow: 0 1px 0 hsl(0, 0%, 15%);
+}
+
+#bo .modal-header {
+  border-bottom: 1px solid;
+}
+
+#bo .modal-footer {
+  border-top: 1px solid;
+  display: block;
+  text-align: center;
+}
+
+#bo .modal-footer a {
+  color: inherit;
+}
+
+#modal-title {
+  font-weight: bold;
+  display: block;
+  /* text-align: center; */
+}
+
+#modal-description {
+
+}
+
+#modal-credits {
+  /* color: hsl(0, 0%, 70%); */
+  font-style: italic;
+  /* text-align: right; */
+  font-size: 0.9em;
+}
+
+
+.navbar-brand small {
+  display: block;
+  text-align: center;
+  font-size: 0.6em;
+  /* color: hsl(360, 0%, 50%); */
+  /* font-family: 'Montserrat', sans-serif; */
+}
+
+.nav-item {
+  font-size: 1.3em;
+  /* font-family: 'Montserrat', sans-serif; */
+}
+
+#bo .nav-link,
+#bo .nav-tabs {
+  background: none;
+  border: none;
+}
+
+/* #bo .fade {
+  transition: opacity 0.3s;
+} */
+
+#bo .navbar-toggler {
+  border: none;
+  padding: 0.25rem 0.25rem;
+}
+
+#bo .navbar-toggler:focus {
+  outline: 0;
+}
+
+#bo .portfolio-box {
+  position: relative;
+  display: block;
+  /* max-width: 650px; */
+  margin: 0 auto;
+  color: inherit;
+}
+
+#bo .portfolio-box-caption {
+  display: none;
+  pointer-events: none;
+  position: absolute;
+  bottom: 0%;
+  width: 100%;
+  background: hsla(360, 0%, 0%, 0.5);
+  padding: 0.7em;
+  /* -webkit-transform: translateY(-50%); */
+  /* transform: translateY(-50%); */
+}
+
+#bo .portfolio-box-caption:hover {
+  display: block;
+}
+
+#bo .portfolio-box-caption h3 {
+  margin: 0;
+  font-size: 1em;
+  text-align: center;
+}
+
+/* Hide content only displayed in modal */
+.project-description,
+.project-credits,
+.project-content {
+  display: none;
+  /* opacity: 1; */
+}
+
+
+.social-icon {
+  list-style: none;
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+
+.social-icon a {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  width: 3em;
+  height: 3em;
+  color: inherit;
+  border-style: solid;
+  border-width: 4px;
+  border-radius: 50%;
+  transition: all 0.3s;
+}
+
+#email:hover {
+  color: #ffa500;
+}
+#twitter:hover {
+  color: #1da1f2;
+}
+#facebook:hover {
+  color: #3b5998;
+}
+#vimeo:hover {
+  color: #1ab7ea;
+}
+#linkedin:hover {
+  color: #0976b4;
+}
+#instagram:hover {
+  color: #c13584;
+}
+
+
+.doodle {
+  position: absolute;
+  bottom: -25px;
+  left: -45px;
+  /* width: 10px; */
+  z-index: -1000;
+}
+
+.doodle img {
+  width: 100px;
+}
