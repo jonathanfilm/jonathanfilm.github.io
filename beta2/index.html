@@ -87,7 +87,7 @@ background-position: bottom;">
         <span class="brand">
           <img src="/img/jonathan-eve-logo.png" alt="Jonathan Eve" width="300">
         </span>
-        <small>Self-shooting filmmaker &middot; Original soundtracks</small>
+        <small>filmmaker &middot; original soundtracks</small>
       </a>
 
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -452,7 +452,33 @@ directed by Jonathan Eve
     <section class="container-fluid tab-pane fade mt-4" id="about" role="tabpanel" aria-labelledby="about-tab">
       <div class="row">
         <div class="col-sm-6 p-2 text-center">
-          <img src="/img/jonathan-developing-film.jpg" class="img-fluid" alt="Photo of Jonathan developing film">
+
+          <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carousel" data-slide-to="0" class="active"></li>
+              <li data-target="#carousel" data-slide-to="1"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-interval="20000">
+                <img src="/img/jonathan-portrait.jpg" class="img-fluid" alt="Portrait of Jonathan sitting on a bench">
+              </div>
+              <div class="carousel-item" data-interval="20000">
+                <img src="/img/jonathan-developing-film.jpg" class="img-fluid" alt="Photo of Jonathan developing film">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+
+
+
+          <!-- <img src="/img/jonathan-developing-film.jpg" class="img-fluid" alt="Photo of Jonathan developing film"> -->
         </div>
         <div class="col-sm-6 p-2 text-center">
           <p>I’m a Bristol based filmmaker, with a specialism in sound.</p>
