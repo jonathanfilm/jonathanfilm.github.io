@@ -8,7 +8,7 @@ $(document).ready(function() {
 
     function submitToAPI(e) {
        e.preventDefault();
-       var URL = "https://d9eyapuh39.execute-api.eu-west-1.amazonaws.com/test";
+       var URL = "https://d9eyapuh39.execute-api.eu-west-1.amazonaws.com/test/submit";
 
             var Namere = /[A-Za-z]{1}[A-Za-z]/;
             if (!Namere.test($("#name").val())) {
