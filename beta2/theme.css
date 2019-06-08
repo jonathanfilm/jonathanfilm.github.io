@@ -175,6 +175,16 @@ p {
   /* opacity: 1; */
 }
 
+#bo .big-quotes {
+  font-size: 200%;
+}
+
+#bo .testimonial {
+
+}
+#bo .testimonial-signature {
+
+}
 
 .social-icon {
   list-style: none;
