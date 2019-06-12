@@ -31,17 +31,17 @@ def start(request):
 
 
     # Prepare data to send confirmation email
+    CONFIRMATION_FROM_NAME = os.environ.get('CONFIRMATION_FROM_NAME', None)
+    CONFIRMATION_FROM_ADDRESS = os.environ.get('CONFIRMATION_FROM_ADDRESS', None)
     confirmation_to_address = from_address
-    confirmation_from_address = TO_ADDRESS
     CONFIRMATION_SUBJECT = os.environ.get('CONFIRMATION_SUBJECT', None)
     CONFIRMATION_MESSAGE = os.environ.get('CONFIRMATION_MESSAGE', None)
-    CONFIRMATION_FROM_NAME = os.environ.get('CONFIRMATION_FROM_NAME', None)
 
     confirmation_body = (CONFIRMATION_MESSAGE + '\n\n' + CONFIRMATION_FROM_NAME +
         '\n\nYour message:\n\"Subject: ' + subject + '\nMessage: ' + message + '\"')
 
     # Send confirmation email to the user
-    send_email(CONFIRMATION_FROM_NAME, confirmation_from_address,
+    send_email(CONFIRMATION_FROM_NAME, CONFIRMATION_FROM_ADDRESS,
         confirmation_to_address, CONFIRMATION_SUBJECT, confirmation_body)
 
 
