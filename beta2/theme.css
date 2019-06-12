@@ -114,7 +114,7 @@ p {
 }
 
 .nav-item {
-  font-size: 1.3em;
+  font-size: 1.2em;
   /* font-family: 'Montserrat', sans-serif; */
 }
 
@@ -175,16 +175,31 @@ p {
   /* opacity: 1; */
 }
 
-#bo .big-quotes {
-  font-size: 200%;
+#bo .big-quotes::before {
+  font-size: 5em;
+  position: relative;
+  top: -40px;
+  content: open-quote;
+  /* font-family: Georgia, serif; */
 }
 
-#bo .testimonial {
-
+#bo .big-quotes::after {
+  content: no-close-quote;
 }
-#bo .testimonial-signature {
 
-}
+
+/* blockquote {
+  padding-left: 100px;
+} */
+
+/* blockquote::before {
+  position: absolute;
+  left: -50px;
+  display: block;
+  font-size: 5em;
+  content: open-quote;
+
+} */
 
 .social-icon {
   list-style: none;

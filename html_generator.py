@@ -22,18 +22,19 @@ with open(csv_file, newline='') as f:
 
         first_col_item = row[0]
 
-        # skip if blank line
+        # if first cell is blank
         if len(first_col_item) == 0:
             continue
 
-        # if section header
+        # if first char in first col cell is '#'
         if first_col_item[0] == '#':
             section = first_col_item[1:]
             continue
 
-        # if column headers
+        # if first char in first col cell is '%'
         if first_col_item[0] == '%':
 
+            # col headers
             col_headers = tuple(header[1:] for header in row)
 
             if section == 'Portfolio':
