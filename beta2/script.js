@@ -1,32 +1,43 @@
-$(document).ready(function() {
 
+$(document).ready(function() {
 
     'use strict';
 
 
-    ////// contact form functions //////
+    // // make hash URLs update like real page
+    // var url = location.href.replace(/\/$/, "");
+    //
+    // if (location.hash) {
+    //     var hash = url.split("#");
+    //     $('#myTab a[href="#' + hash[1] + '"]').tab("show");
+    //     url = location.href.replace(/\/#/, "#");
+    //     history.replaceState(null, null, url);
+    //     setTimeout(function () {
+    //         $(window).scrollTop(0);
+    //     }, 0);
+    // }
+    //
+    // $('a[data-toggle="tab"]').on("click", function () {
+    //     var newUrl;
+    //     var hash = $(this).attr("href");
+    //
+    //     if (hash == "#home") {
+    //         newUrl = url.split("#")[0];
+    //     } else {
+    //         newUrl = url.split("#")[0] + hash;
+    //     }
+    //
+    //     history.replaceState(null, null, newUrl);
+    // });
 
-    function submitToAPI(e) {
-       e.preventDefault();
-       var URL = "https://d9eyapuh39.execute-api.eu-west-1.amazonaws.com/test/submit";
-
-            var Namere = /[A-Za-z]{1}[A-Za-z]/;
-            if (!Namere.test($("#name").val())) {
-                         alert ("Name can not be less than 2 characters");
-                return;
-            }
-            if ($("#senderEmail").val()=="") {
-                alert ("Please enter your email id");
-                return;
-            }
-        }
+    var anchor = window.location.hash;
+    $("a[href=\"".concat(anchor, "\"]")).tab('show');
 
     ///////////////// MODAL PREVIEW //////////////////
 
     // modal variables
     var currentTarget;
     var videoPlaceholder = $('#modal-video').html();
-
 
 
     // get data reference for preview modal and load
