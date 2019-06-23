@@ -1,16 +1,18 @@
-<div class="col-sm-6 col-lg-4 p-3">
-  <a class="portfolio-box" data-toggle="modal" data-target="#previewModal" href="#">
-    <img src="/img/thumbs/{portfolio_item.Thumbnail}" class="img-fluid" alt="Responsive image">
-    <div class="portfolio-box-caption">
-      <h3 class="project-title">{portfolio_item.Title}</h3>
-      <p class="project-credits">{portfolio_item.Credits}</p>
-      <p class="project-description">{portfolio_item.Description}</p>
-      <div class="project-content">
-        <div class="embed-responsive embed-responsive-{portfolio_item.AspectRatio}">
-          <iframe class="embed-responsive-item" src="{portfolio_item.URL}" allowfullscreen></iframe>
+<div class="portfolio-item col-sm-6 col-lg-4 px-0 py-2 px-sm-2">
+    <div class="row no-gutters">
+      <div class="col-4 col-sm-12">
+        <img src="/img/thumbs/500px/{portfolio_item.Thumbnail}" class="img-fluid" alt="Responsive image">
+      </div>
+      <div class="col-8 col-sm-12">
+        <div class="portfolio-item-text py-1 px-2 px-sm-1">
+          <h2 class="project-title">{portfolio_item.Title}</h2>
+          <p class="project-subtitle"><small class="text-muted">{portfolio_item.Subtitle}</small></p>
+          <p class="project-description-short">{portfolio_item.ShortDescription}</p>
+          <p class="project-description">{portfolio_item.Description}</p>
+          <p class="project-credits">{portfolio_item.Credits}</p>
+          <a class="project-content" data-aspect-ratio="{portfolio_item.AspectRatio}" href="{portfolio_item.URL}">Link to video</a>
         </div>
       </div>
+      <a class="stretched-link" data-toggle="modal" data-target="#previewModal" href="#"></a>
     </div>
-    <!-- <span class="badge badge-secondary">Coming soon</span> -->
-  </a>
 </div>

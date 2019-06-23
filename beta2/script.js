@@ -43,7 +43,7 @@ $(document).ready(function() {
     // get data reference for preview modal and load
     $('#previewModal').on('show.bs.modal', function (event) {
 
-        currentTarget = $(event.relatedTarget);
+        currentTarget = $(event.relatedTarget).parent();
         loadModalData(currentTarget);
 
     });
@@ -83,12 +83,39 @@ $(document).ready(function() {
         var content;
         var modal = $('#previewModal');
         // check if video link exists --> if not
-        var contentElement = target.find('.project-content').find('iframe').attr('src');
+        var contentElement = target.find('.project-content').attr('href');
+
         if (contentElement == "#") {
             content = videoPlaceholder;
+
         } else {
-            content = target.find('.project-content').html(); // Extract info from object
+            console.log(target);
+            var aspectRatio = target.find('.project-content').attr('data-aspect-ratio'); // Extract info from object
+            var mediaUrl = target.find('.project-content').attr('href');
+            var embedUrl;
+            // format URLs for html embed based on type
+            if (mediaUrl.substring(0,17) == 'https://vimeo.com') {
+                embedUrl = "https://player.vimeo.com/video" + mediaUrl.substring(17) + "?color=ffffff&title=0&byline=0&portrait=0";
+
+            } else if (mediaUrl.substring(0,16) == 'https://youtu.be') {
+                embedUrl = "https://www.youtube-nocookie.com/embed" + mediaUrl.substring(16);
+
+            } else {
+                console.log("Unrecognised media URL");
+            }
+
+            // TODO: integrate aspect ratio
+            content = $('<div>').addClass('embed-responsive embed-responsive-'+aspectRatio).append($('<iframe>').addClass('embed-responsive-item').attr('src', embedUrl).attr('allowfullscreen', true));
         }
+
+        // <div class="project-content">
+        //   <!-- set the correct aspect ratio here -->
+        //   <div class="embed-responsive embed-responsive-16by9">
+        //     <iframe class="embed-responsive-item" src="https://vimeo.com/298009105" allowfullscreen></iframe>
+        //   </div>
+        // </div>
+
+
 
         $('#modal-video').html(content);
         $('#modal-title').text(titleText);
@@ -101,7 +128,10 @@ $(document).ready(function() {
     // go to next and previous
     function goToTarget(direction) {
 
+        console.log(currentTarget);
+
         var currentTargetParent = currentTarget.parent();
+        console.log(currentTargetParent);
         var newTargetParent;
 
         if (direction == 'previous') {
@@ -122,8 +152,8 @@ $(document).ready(function() {
                 newTargetParent = allTargetParents.first();
             }
         }
-
-        var newTarget = newTargetParent.children('.portfolio-box');
+        // TODO: fix row with proper class name!!
+        var newTarget = newTargetParent.children('.row');
 
         return newTarget;
     }

@@ -19,9 +19,8 @@ body {
   /* center content */
   margin: auto;
   /* increase content padding and fix modal 'bug' */
-  padding-left: 1rem;
-  padding-right: 1rem;
-
+  /* padding-left: 1rem; */
+  /* padding-right: 1rem; */
 
 }
 
@@ -29,6 +28,10 @@ body {
 
 }
 
+/* remove underlines for all links */
+#bo a {
+  text-decoration: none;
+}
 
 /* Set the style for paragraph text */
 p {
@@ -40,6 +43,26 @@ p {
 }
 
 
+/* override bootstrap font colours */
+
+/* main colour */
+/* bright*/
+#bo,
+#bo .navbar-brand,
+#bo .navbar-toggler:hover {
+  color: hsl(40, 14%, 85%);
+}
+/* medium */
+#bo .navbar-toggler {
+  color: hsl(40, 14%, 65%);
+}
+/* darkest */
+#bo {
+  /* color: hsl(40, 14%, 55%); */
+}
+
+
+
 /* remove default link colouring */
 /* #bo a {
   color: inherit;
@@ -47,7 +70,7 @@ p {
 
 /* to fix stupid modal margin right problem in windows */
 #bo.modal-open {
-  padding-right: 1rem !important;
+  padding-right: 0.5rem !important;
 }
 
 #bo.modal-open .container-fluid img {
@@ -108,7 +131,7 @@ p {
   display: block;
   text-align: center;
   font-size: 0.7em;
-  opacity: 0.7;
+  /* opacity: 0.7; */
   /* color: hsl(360, 0%, 50%); */
   /* font-family: 'Montserrat', sans-serif; */
 }
@@ -130,41 +153,45 @@ p {
 
 #bo .navbar-toggler {
   border: none;
-  padding: 0.25rem 0.25rem;
+  padding-left: 0;
+  padding-right: 0;
+  font-size: 1.25rem;
 }
 
 #bo .navbar-toggler:focus {
   outline: 0;
+  /* color:  */
+}
+#bo .portfolio-item a:focus {
+  outline: 0;
 }
 
-#bo .portfolio-box {
-  position: relative;
-  display: block;
-  /* max-width: 650px; */
-  margin: 0 auto;
-  color: inherit;
+.portfolio-item-text {
+  /* padding: 0.2rem 1rem; */
 }
 
-#bo .portfolio-box-caption {
-  display: none;
-  pointer-events: none;
-  position: absolute;
-  bottom: 0%;
-  width: 100%;
-  background: hsla(360, 0%, 0%, 0.5);
-  padding: 0.7em;
-  /* -webkit-transform: translateY(-50%); */
-  /* transform: translateY(-50%); */
+.project-title {
+  font-size: 1rem;
+  margin-bottom: 0.2rem;
+  line-height: normal;
+  text-transform: capitalize;
 }
 
-#bo .portfolio-box-caption:hover {
-  display: block;
+.project-subtitle {
+  font-size: 0.8rem;
+  margin-bottom: 0.2rem;
+  line-height: normal;
+  text-transform: uppercase;
 }
 
-#bo .portfolio-box-caption h3 {
-  margin: 0;
-  font-size: 1em;
-  text-align: center;
+.project-description-short {
+  font-size: 0.8rem;
+  margin-bottom: 0.2rem;
+  line-height: normal;
+}
+
+.project-description-short::before {
+  content: " - ";
 }
 
 /* Hide content only displayed in modal */
@@ -172,8 +199,12 @@ p {
 .project-credits,
 .project-content {
   display: none;
-  /* opacity: 1; */
 }
+
+
+
+
+
 
 #bo .big-quotes::before {
   font-size: 5em;
@@ -221,11 +252,6 @@ p {
   transition: all 0.3s;
 }
 
-
-.footer {
-  padding-top: 9rem;
-  padding-bottom: 1rem;
-}
 
 #email:hover {
   color: #ffa500;

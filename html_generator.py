@@ -9,7 +9,7 @@ from collections import namedtuple
 # variables
 csv_file = "/Users/gabrieleve/Downloads/JE website - Website content.csv"
 portfolio_template_file = "portfolio-item.html"
-html_output_file = "test.html"
+html_output_file = "output.html"
 portfolio_items = []
 
 
@@ -53,18 +53,6 @@ with open(csv_file, newline='') as f:
             # format URLs for html embed based on type
             if URL == '':
                 row[col_URL] = '#'
-
-            elif URL[:17] == 'https://vimeo.com':
-                row[col_URL] = ("https://player.vimeo.com/video"
-                + URL[17:]
-                + "?color=ffffff&title=0&byline=0&portrait=0")
-
-            elif URL[:16] == 'https://youtu.be':
-                row[col_URL] = "https://www.youtube-nocookie.com/embed" + URL[16:]
-
-            else:
-                print("Unrecognised portfolio URL")
-
 
             item = PortfolioItem(*row)
             portfolio_items.append(item)
