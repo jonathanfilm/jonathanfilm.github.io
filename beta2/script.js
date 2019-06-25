@@ -89,7 +89,6 @@ $(document).ready(function() {
             content = videoPlaceholder;
 
         } else {
-            console.log(target);
             var aspectRatio = target.find('.project-content').attr('data-aspect-ratio'); // Extract info from object
             var mediaUrl = target.find('.project-content').attr('href');
             var embedUrl;
@@ -128,10 +127,7 @@ $(document).ready(function() {
     // go to next and previous
     function goToTarget(direction) {
 
-        console.log(currentTarget);
-
         var currentTargetParent = currentTarget.parent();
-        console.log(currentTargetParent);
         var newTargetParent;
 
         if (direction == 'previous') {
