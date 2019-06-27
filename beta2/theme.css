@@ -31,11 +31,6 @@ body {
 }
 
 
-
-#background-2 {
-
-}
-
 /* remove underlines for all links */
 #bo a {
   text-decoration: none;
@@ -51,15 +46,16 @@ body {
 /* main colour */
 
 /* darkest */
+#bo .project-subtitle,
 #bo .nav-link {
-  color: hsla(40, 14%, 80%, 60%);
+  color: hsla(40, 14%, 80%, 0.55);
 }
 
 /* medium */
 #bo .nav-link:hover,
 #bo .project-description-short,
 #bo .navbar-toggler {
-  color: hsla(40, 14%, 80%, 80%);
+  color: hsla(40, 14%, 80%, 0.75);
 }
 
 /* bright*/
@@ -67,7 +63,7 @@ body {
 #bo .nav-link.active,
 #bo .navbar-brand,
 #bo .navbar-toggler:hover {
-  color: hsla(40, 14%, 80%, 100%);
+  color: hsla(40, 14%, 80%, 1);
 }
 
 /* green */
@@ -90,8 +86,14 @@ body {
   color: hsl(3, 100%, 82%);
 }
 
+#modal-description a,
 .pastel-blue {
   color: hsl(200, 31%, 53%);
+}
+
+#modal-description a:hover,
+.pastel-blue-dark {
+  color: hsl(200, 31%, 43%);
 }
 
 .pastel-green {
@@ -115,6 +117,7 @@ body {
 #bo .modal-content {
   color: hsl(40, 14%, 65%);
   background-color: hsl(0, 0%, 10%);
+  font-size: 0.9rem;
   /* border: solid; */
   /* color: hsl(0, 0%, 90%); */
 }
@@ -128,12 +131,22 @@ body {
   text-shadow: 0 1px 0 hsl(0, 0%, 15%);
 }
 
+#bo .close {
+  font-size: 3rem;
+}
+
+#bo .modal-header .close {
+  padding: 0 1rem;
+}
+
 #bo .modal-header {
-  border-bottom: 1px solid;
+  /* border-bottom: 1px solid; */
+  border-bottom: none;
 }
 
 #bo .modal-footer {
-  border-top: 1px solid;
+  /* border-top: 1px solid; */
+  border-top: none;
   display: block;
   text-align: center;
 }
