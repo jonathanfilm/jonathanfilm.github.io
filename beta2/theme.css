@@ -96,6 +96,18 @@ body {
   color: hsl(200, 31%, 43%);
 }
 
+#bo .btn-primary {
+  /* background-color: hsl(200, 31%, 53%); */
+  background-color: transparent;
+  border-color: hsla(40, 14%, 80%, 1);
+;
+}
+
+#bo .btn-primary:hover {
+  background-color: hsl(200, 31%, 43%);
+  border-color: hsl(200, 31%, 43%);
+}
+
 .pastel-green {
   color: hsl(173, 32%, 40%);
 }
@@ -280,19 +292,6 @@ body {
 .testimonial footer cite {
   font-style: italic;
 }
-
-
-#bo .btn-primary {
-  background-color: hsl(200, 31%, 53%);
-  border-color: hsl(200, 31%, 53%);
-}
-
-#bo .btn-primary:hover {
-  background-color: hsl(200, 31%, 43%);
-  border-color: hsl(200, 31%, 43%);
-}
-
-
 
 .social-icon {
   list-style: none;
