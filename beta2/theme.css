@@ -1,26 +1,29 @@
+/* Set the main theme colours in the body tag */
+
 html {
-  /* TODO: what is this for? */
-    overflow-y: scroll;
+  font-size: 12pt;
 }
 
-/* Set the main theme colours in the body tag */
+@media (max-width: 400px) {
+  html {
+    font-size: 10pt;
+  }
+}
+
 body {
 
   /* Set the main font style here */
   font-family: 'Montserrat', 'Raleway', 'Open sans', 'Nunito', sans-serif;
-  font-size: 12pt;
   /* fall back background */
   background-color: black;
 
   /* limit width of content on large screens */
   max-width: 1170px;
-  /* center content */
   margin: auto;
-  /* increase content padding and fix modal 'bug' */
-  /* padding-left: 1rem; */
-  /* padding-right: 1rem; */
 
 }
+
+
 
 #bo .navbar-container {
   font-family: 'Courier', 'Cutive Mono', 'Inconsolata', monospace;
@@ -63,25 +66,6 @@ body {
   color: hsla(40, 0%, 80%, 1);
 }
 
-/* green */
-.green {
-  color: hsl(158, 55%, 78%);
-}
-
-/* yellow */
-.yellow {
-  color: hsl(61, 100%, 84%);
-}
-
-/* salmon */
-.salmon {
-  color: hsl(24, 100%, 86%);
-}
-
-/* rose */
-.rose {
-  color: hsl(3, 100%, 82%);
-}
 
 #modal-description a,
 .pastel-blue {
@@ -96,21 +80,14 @@ body {
 #bo .btn-primary {
   background-color: transparent;
   border-color: hsla(40, 0%, 80%, 1);
-;
+  color: hsla(40, 0%, 80%, 1)
 }
 
 #bo .btn-primary:hover {
-  /* background-color: hsl(200, 31%, 43%); */
-  border-color: hsl(200, 31%, 43%);
+  background-color: hsla(40, 0%, 100%, 1);
+  color: hsla(40, 0%, 10%, 1)
 }
 
-.pastel-green {
-  color: hsl(173, 32%, 40%);
-}
-/* remove default link colouring */
-/* #bo a {
-  color: inherit;
-} */
 
 /* to fix stupid modal margin right problem in windows */
 #bo.modal-open {
@@ -125,7 +102,7 @@ body {
 #bo .modal-content {
   color: hsl(40, 0%, 80%);
   background-color: hsl(0, 0%, 10%);
-  font-size: 0.9rem;
+  font-size: 0.9em;
   /* border: solid; */
   /* color: hsl(0, 0%, 90%); */
 }
@@ -140,7 +117,7 @@ body {
 }
 
 #bo .close {
-  font-size: 3rem;
+  font-size: 3em;
 }
 
 #bo .modal-header .close {
@@ -182,6 +159,8 @@ body {
 }
 
 
+
+
 .navbar-brand small {
   display: block;
   text-align: center;
@@ -210,7 +189,7 @@ body {
   border: none;
   /* padding-left: 0; */
   padding-right: 0;
-  font-size: 1.5rem;
+  font-size: 1.5em;
 }
 
 #bo .navbar-toggler:focus {
@@ -220,6 +199,9 @@ body {
 #bo .portfolio-item a:focus {
   outline: 0;
 }
+
+
+
 
 #bo .portfolio-item:hover {
   background-color: hsla(200, 0%, 53%, 0.2);
@@ -232,25 +214,22 @@ body {
   transition: background-color 0.3s;
 }
 
-.portfolio-item-text {
-  /* padding: 0.2rem 1rem; */
-}
 
 .project-title {
-  font-size: 1rem;
+  font-size: 1em;
   margin-bottom: 0.2rem;
   line-height: normal;
 }
 
 .project-subtitle {
-  font-size: 0.8rem;
+  font-size: 0.8em;
   margin-bottom: 0.2rem;
   line-height: normal;
   text-transform: uppercase;
 }
 
 .project-description-short {
-  font-size: 0.8rem;
+  font-size: 0.8em;
   /* font-style: italic; */
   margin-bottom: 0.2rem;
   line-height: normal;
