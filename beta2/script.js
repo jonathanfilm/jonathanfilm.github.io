@@ -121,6 +121,8 @@ $(document).ready(function() {
         $('#modal-credits').html(creditText);
         $('#modal-description').html(descriptionText);
 
+        $('#previewModal').modal('handleUpdate');
+
     }
 
 

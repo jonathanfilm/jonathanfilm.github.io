@@ -23,11 +23,8 @@ body {
 }
 
 #bo .navbar-container {
-  font-family: 'Courier Bold', 'Cutive Mono', 'Inconsolata', monospace;
+  font-family: 'Courier', 'Cutive Mono', 'Inconsolata', monospace;
 
-}
-#bo .left-border {
-  border-left: hsl(200, 31%, 53%, 0.7) solid 6px;
 }
 
 
@@ -38,7 +35,7 @@ body {
 
 
 #bo .muted-colour {
-  color: hsl(40, 7%, 30%);
+  color: hsl(40, 0%, 40%);
 }
 
 
@@ -48,14 +45,14 @@ body {
 /* darkest */
 #bo .project-subtitle,
 #bo .nav-link {
-  color: hsla(40, 14%, 80%, 0.55);
+  color: hsla(40, 0%, 80%, 0.55);
 }
 
 /* medium */
 #bo .nav-link:hover,
 #bo .project-description-short,
 #bo .navbar-toggler {
-  color: hsla(40, 14%, 80%, 0.75);
+  color: hsla(40, 0%, 80%, 0.75);
 }
 
 /* bright*/
@@ -63,7 +60,7 @@ body {
 #bo .nav-link.active,
 #bo .navbar-brand,
 #bo .navbar-toggler:hover {
-  color: hsla(40, 14%, 80%, 1);
+  color: hsla(40, 0%, 80%, 1);
 }
 
 /* green */
@@ -98,7 +95,7 @@ body {
 
 #bo .btn-primary {
   background-color: transparent;
-  border-color: hsla(40, 14%, 80%, 1);
+  border-color: hsla(40, 0%, 80%, 1);
 ;
 }
 
@@ -126,7 +123,7 @@ body {
 }
 
 #bo .modal-content {
-  color: hsl(40, 14%, 65%);
+  color: hsl(40, 0%, 80%);
   background-color: hsl(0, 0%, 10%);
   font-size: 0.9rem;
   /* border: solid; */
@@ -224,9 +221,15 @@ body {
   outline: 0;
 }
 
-#bo .portfolio-item > .row:hover {
-  background-color: hsla(200, 31%, 53%, 0.2);
-  border-radius: 4px;
+#bo .portfolio-item:hover {
+  background-color: hsla(200, 0%, 53%, 0.2);
+  background-clip: content-box;
+  transition: background-color 0.3s;
+}
+
+#bo .portfolio-item {
+  background-clip: content-box;
+  transition: background-color 0.3s;
 }
 
 .portfolio-item-text {
@@ -248,7 +251,7 @@ body {
 
 .project-description-short {
   font-size: 0.8rem;
-  font-style: italic;
+  /* font-style: italic; */
   margin-bottom: 0.2rem;
   line-height: normal;
 }
