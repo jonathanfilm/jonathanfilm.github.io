@@ -120,6 +120,10 @@ body {
   font-size: 3em;
 }
 
+#bo .close {
+  outline: none;
+}
+
 #bo .modal-header .close {
   padding: 0 1rem;
 }
