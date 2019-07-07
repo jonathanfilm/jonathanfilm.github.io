@@ -1,12 +1,12 @@
 /* Set the main theme colours in the body tag */
 
 html {
-  font-size: 12pt;
+  /* font-size: 12pt; */
 }
 
-@media (max-width: 400px) {
+@media (max-width: 360px) {
   html {
-    font-size: 11pt;
+    font-size: 90%;
   }
 }
 
@@ -100,9 +100,9 @@ body {
 }
 
 #bo .modal-content {
-  color: hsl(40, 0%, 80%);
+  color: hsla(40, 0%, 80%, 0.75);
   background-color: hsl(0, 0%, 10%);
-  font-size: 0.9em;
+  /* font-size: 0.9em; */
   /* border: solid; */
   /* color: hsl(0, 0%, 90%); */
 }
@@ -204,7 +204,7 @@ body {
 
 
 #bo .portfolio-item:hover {
-  background-color: hsla(200, 0%, 53%, 0.2);
+  background-color: hsla(40, 0%, 30%, 0.4);
   background-clip: content-box;
   transition: background-color 0.3s;
 }
@@ -248,6 +248,11 @@ body {
 }
 
 
+
+#bo .about-content {
+  max-width: 500px;
+  margin: auto;
+}
 
 #bo .big-quotes::before {
   font-size: 3em;
