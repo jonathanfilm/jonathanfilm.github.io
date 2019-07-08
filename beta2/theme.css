@@ -67,12 +67,12 @@ body {
 }
 
 
-#modal-description a,
+a,
 .pastel-blue {
   color: hsl(200, 31%, 53%);
 }
 
-#modal-description a:hover,
+a:hover,
 .pastel-blue-dark {
   color: hsl(200, 31%, 43%);
 }
