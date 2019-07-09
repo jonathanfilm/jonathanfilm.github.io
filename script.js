@@ -44,7 +44,7 @@ $(document).ready(function() {
     $('#previewModal').on('show.bs.modal', function (event) {
         
         // hack to stop hide scroll bars during modal
-        $('html').css('overflow-y', 'hidden');
+        // $('html').css('overflow-y', 'hidden');
 
         currentTarget = $(event.relatedTarget).parent();
         loadModalData(currentTarget);
@@ -72,7 +72,7 @@ $(document).ready(function() {
     $('#previewModal').on('hidden.bs.modal', function () {
         
         // hack to stop hide scroll bars during modal
-        $('html').css('overflow-y', 'scroll');
+        // $('html').css('overflow-y', 'scroll');
 
         $('#modal-video').html(videoPlaceholder);
 
