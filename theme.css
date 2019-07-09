@@ -17,13 +17,13 @@ body {
   /* fall back background */
   background-color: black;
 
+}
+
+#background-2 {
   /* limit width of content on large screens */
   max-width: 1170px;
   margin: auto;
-
 }
-
-
 
 #bo .navbar-container {
   font-family: 'Courier', 'Cutive Mono', 'Inconsolata', monospace;
