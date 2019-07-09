@@ -42,6 +42,9 @@ $(document).ready(function() {
 
     // get data reference for preview modal and load
     $('#previewModal').on('show.bs.modal', function (event) {
+        
+        // hack to stop hide scroll bars during modal
+        $('html').css('overflow-y', 'hidden');
 
         currentTarget = $(event.relatedTarget).parent();
         loadModalData(currentTarget);
@@ -67,6 +70,9 @@ $(document).ready(function() {
 
     // remove video from modal when closed/hidden (to stop playback in background)
     $('#previewModal').on('hidden.bs.modal', function () {
+        
+        // hack to stop hide scroll bars during modal
+        $('html').css('overflow-y', 'scroll');
 
         $('#modal-video').html(videoPlaceholder);
 
