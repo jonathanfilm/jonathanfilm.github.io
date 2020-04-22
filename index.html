@@ -386,7 +386,7 @@
     <div class="row justify-content-center">
       <div class="col-md-9 col-lg-7 col-xl-7 p-2">
 
-  <form id="contact-form" class="needs-validation" action="https://us-central1-radiant-entry-241421.cloudfunctions.net/email_form" method="post" autocomplete="off" novalidate>
+  <form id="contact-form" class="needs-validation" action="https://us-central1-radiant-entry-241421.cloudfunctions.net/email_form" method="post" novalidate>
 
     <div class="form-group">
       <input type="text" class="form-control" id="fromName" name="fromName" placeholder="Name" required>
@@ -396,7 +396,7 @@
     </div>
 
     <div class="form-group">
-      <input autocomplete="on" type="email" class="form-control" id="fromEmail" name="fromEmail" aria-describedby="emailHelp" placeholder="Email address" required>
+      <input type="email" class="form-control" id="fromEmail" name="fromEmail" aria-describedby="emailHelp" placeholder="Email address" required>
       <div class="invalid-feedback">
         Invalid email address.
       </div>
@@ -414,6 +414,13 @@
       <textarea class="form-control" id="message" name="message" placeholder="Type message here..." rows="6" required></textarea>
       <div class="invalid-feedback">
         Please write your message in the space provided.
+      </div>
+    </div>
+
+    <div class="form-group">
+      <input type="text" class="form-control" id="antiSpam" name="antiSpam" placeholder="To prove you're not a robot, please write my surname here" required>
+      <div class="invalid-feedback">
+        It looks like you might be a robot...sorry!
       </div>
     </div>
 
