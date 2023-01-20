@@ -1,8 +1,5 @@
 /* Set the main theme colours in the body tag */
 
-html {
-  /* font-size: 12pt; */
-}
 
 @media (max-width: 360px) {
   html {
@@ -199,6 +196,7 @@ a:hover,
 #bo .portfolio-item a:focus {
   outline: 0;
 }
+
 
 
 

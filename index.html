@@ -5,7 +5,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Jonathan Eve - Filmmaker</title>
-  <meta name="description" content="Bristol based filmmaker. Storyboarding, cinematography, editing and original soundtracks.">
+  <meta name="description" content="Bristol based filmmaker. Storyboarding, cinematography, editing, sound design and original soundtracks.">
 
   <!-- Browser icon -->
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=2">
@@ -22,7 +22,7 @@
   <script src="google-analytics.js"></script>
 
   <!-- Bootstrap CSS -->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
   
   <!-- Font Awesome CSS -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
@@ -75,16 +75,49 @@
 
   <!-- Portfolio section -->
   <section class="container-fluid tab-pane fade show active" id="portfolio" role="tabpanel" aria-labelledby="portfolio-tab">
+
+    <div class="text-center pb-5">
+      <div class="btn-group-sm btn-group-toggle" data-toggle="buttons">
+
+        <label class="btn btn-outline-secondary shadow-none active">
+          <input class="filter-button" type="radio" name="options" data-filter="all" checked> All
+        </label>
+        <label class="btn btn-outline-secondary shadow-none">
+          <input class="filter-button" type="radio" name="options" data-filter="nature"> Nature
+        </label>
+        <label class="btn btn-outline-secondary shadow-none">
+          <input class="filter-button" type="radio" name="options" data-filter="documentary"> Documentary
+        </label>
+        <label class="btn btn-outline-secondary shadow-none">
+          <input class="filter-button" type="radio" name="options" data-filter="music"> Music
+        </label>
+        <label class="btn btn-outline-secondary shadow-none">
+          <input class="filter-button" type="radio" name="options" data-filter="educational"> Educational
+        </label>
+        <label class="btn btn-outline-secondary shadow-none">
+          <input class="filter-button" type="radio" name="options" data-filter="art"> Art
+        </label>
+        <label class="btn btn-outline-secondary shadow-none">
+          <input class="filter-button" type="radio" name="options" data-filter="experimental"> Experimental
+        </label>
+        <!-- <label class="btn btn-outline-secondary shadow-none">
+          <input class="filter-button" type="radio" name="options" data-filter="drama"> Drama
+        </label> -->
+
+      </div>
+    </div>
+
+
     <div class="row">
-      <div class="portfolio-item col-sm-6 col-lg-4 px-0 py-2 px-sm-2">
+      <div class="portfolio-item col-sm-6 col-lg-4 px-0 py-2 px-sm-2 filter documentary">
     <div class="row no-gutters">
       <div class="col-5 col-sm-12">
-        <img src="/img/thumbs/500px/a-day-on-five-acre-farm.jpg" class="img-fluid" alt="Thumbnail for A Day on Five Acre Farm - showing beekeeper extracting honey">
+        <img src="/img/thumbs/500px/a-day-on-five-acre-farm.jpg" class="img-fluid easeload" onload="this.style.opacity=1" alt="Thumbnail for A Day on Five Acre Farm - showing beekeeper extracting honey">
       </div>
       <div class="col-7 col-sm-12">
         <div class="portfolio-item-text py-1 py-sm-2 px-2 px-sm-1">
           <h2 class="project-title">A Day on Five Acre Farm </h2>
-          <p class="project-subtitle"><small>A Jonathan Eve Production</small></p>
+          <p class="project-subtitle"><small>Jonathan Eve Production</small></p>
           <p class="project-description-short d-none d-sm-block">a day on a small farm in North Somerset</p>
           <p class="project-description">In early 2018 George, Sarah and the team at Tobacco Factory purchased five acres of land near Backwell, just to the south of Bristol, and set about establishing our very own farm to supply our kitchens and shop in town with delicious fresh produce, embracing the ‘farm to fork’ movement.</p>
           <p class="project-credits">camera, sound, editing & music by Jonathan Eve<br>2022</p>
@@ -95,15 +128,15 @@
     </div>
 </div>
 
-<div class="portfolio-item col-sm-6 col-lg-4 px-0 py-2 px-sm-2">
+<div class="portfolio-item col-sm-6 col-lg-4 px-0 py-2 px-sm-2 filter documentary">
     <div class="row no-gutters">
       <div class="col-5 col-sm-12">
-        <img src="/img/thumbs/500px/a-short-film-about-ice.jpg" class="img-fluid" alt="Thumbnail for A Short Film About Ice - showing a glacier">
+        <img src="/img/thumbs/500px/a-short-film-about-ice.jpg" class="img-fluid easeload" onload="this.style.opacity=1" alt="Thumbnail for A Short Film About Ice - showing a glacier">
       </div>
       <div class="col-7 col-sm-12">
         <div class="portfolio-item-text py-1 py-sm-2 px-2 px-sm-1">
           <h2 class="project-title">A Short Film About Ice</h2>
-          <p class="project-subtitle"><small>A Black Cat Production</small></p>
+          <p class="project-subtitle"><small>Black Cat Production</small></p>
           <p class="project-description-short d-none d-sm-block">winner of Best Climate Emergency Film AHRC Research In Film Awards 2020</p>
           <p class="project-description">A film-poem (29 mins) documenting the journey of a cinematographer through the fragile landscapes of the Arctic.</p>
           <p class="project-credits">a film by Adam Laity<br>sound design by Jonathan Eve<br>2020</p>
@@ -114,15 +147,15 @@
     </div>
 </div>
 
-<div class="portfolio-item col-sm-6 col-lg-4 px-0 py-2 px-sm-2">
+<div class="portfolio-item col-sm-6 col-lg-4 px-0 py-2 px-sm-2 filter music">
     <div class="row no-gutters">
       <div class="col-5 col-sm-12">
-        <img src="/img/thumbs/500px/its-coming-home-for-christmas.jpg" class="img-fluid" alt="Thumbnail for It's Coming Home For Christmas - Ashatones on football pitch">
+        <img src="/img/thumbs/500px/its-coming-home-for-christmas.jpg" class="img-fluid easeload" onload="this.style.opacity=1" alt="Thumbnail for It's Coming Home For Christmas - Ashatones on football pitch">
       </div>
       <div class="col-7 col-sm-12">
         <div class="portfolio-item-text py-1 py-sm-2 px-2 px-sm-1">
           <h2 class="project-title">It's Coming Home for Christmas</h2>
-          <p class="project-subtitle"><small>An Ashatones Production</small></p>
+          <p class="project-subtitle"><small>Ashatones Production</small></p>
           <p class="project-description-short d-none d-sm-block">unofficial England team anthem for the 2022 world cup</p>
           <p class="project-description">Barbershop quartet arrangement of Chris Rea's 'Driving Home for Christmas' with a FIFA Qatar 2022 World Cup twist!</p>
           <p class="project-credits">performed by The Ashatones<br>directed by Eleanor Pead<br>camera and editing by Jonathan Eve</p>
@@ -133,15 +166,15 @@
     </div>
 </div>
 
-<div class="portfolio-item col-sm-6 col-lg-4 px-0 py-2 px-sm-2">
+<div class="portfolio-item col-sm-6 col-lg-4 px-0 py-2 px-sm-2 filter documentary">
     <div class="row no-gutters">
       <div class="col-5 col-sm-12">
-        <img src="/img/thumbs/500px/terrestrial.jpg" class="img-fluid" alt="Thumbnail for Terrestrial: a year of arts adventures in Weston-super-Mare - showing a group of dancers in rehearsal">
+        <img src="/img/thumbs/500px/terrestrial.jpg" class="img-fluid easeload" onload="this.style.opacity=1" alt="Thumbnail for Terrestrial: a year of arts adventures in Weston-super-Mare - showing a group of dancers in rehearsal">
       </div>
       <div class="col-7 col-sm-12">
         <div class="portfolio-item-text py-1 py-sm-2 px-2 px-sm-1">
           <h2 class="project-title">Terrestrial: a year of arts adventures in Weston-super-Mare</h2>
-          <p class="project-subtitle"><small>A Black Cat Production</small></p>
+          <p class="project-subtitle"><small>Black Cat Production</small></p>
           <p class="project-description-short d-none d-sm-block">socially engaged arts projects, community events and wild adventures</p>
           <p class="project-description">Terrestrial has been supporting a series of bold projects in Weston-super-Mare. This film tells the story of these collaborative artworks - each created through a partnership between visiting national artists and local community groups.</p>
           <p class="project-credits">camera & editing by Adam Laity<br>sound & editing by Jonathan Eve<br>Still photography by Paul Blakemore<br>Music by Verity Standen & Paul Rogerson<br>2020</p>
@@ -152,15 +185,15 @@
     </div>
 </div>
 
-<div class="portfolio-item col-sm-6 col-lg-4 px-0 py-2 px-sm-2">
+<div class="portfolio-item col-sm-6 col-lg-4 px-0 py-2 px-sm-2 filter music">
     <div class="row no-gutters">
       <div class="col-5 col-sm-12">
-        <img src="/img/thumbs/500px/where-do-you-hide.jpg" class="img-fluid" alt="Thumbnail for Where Do You Hide? - showing the face of a man screaming into the wind">
+        <img src="/img/thumbs/500px/where-do-you-hide.jpg" class="img-fluid easeload" onload="this.style.opacity=1" alt="Thumbnail for Where Do You Hide? - showing the face of a man screaming into the wind">
       </div>
       <div class="col-7 col-sm-12">
         <div class="portfolio-item-text py-1 py-sm-2 px-2 px-sm-1">
           <h2 class="project-title">Where Do You Hide?</h2>
-          <p class="project-subtitle"><small>A Black Cat Production</small></p>
+          <p class="project-subtitle"><small>Black Cat Production</small></p>
           <p class="project-description-short d-none d-sm-block">a new song by Verity Standen</p>
           <p class="project-description">A new song by Verity Standen, recorded remotely as a lockdown experiment - with singers across the UK screaming into their phones and laptops.</p>
           <p class="project-credits">song composed and performed by Verity Standen<br>song produced and co-arranged by David Ridley<br>film directed & cinematography by Adam Laity<br>additional camerawork & editing by Jonathan Eve</p>
@@ -171,15 +204,15 @@
     </div>
 </div>
 
-<div class="portfolio-item col-sm-6 col-lg-4 px-0 py-2 px-sm-2">
+<div class="portfolio-item col-sm-6 col-lg-4 px-0 py-2 px-sm-2 filter art">
     <div class="row no-gutters">
       <div class="col-5 col-sm-12">
-        <img src="/img/thumbs/500px/figuring.jpg" class="img-fluid" alt="Thumbnail for Figuring - showing a Figuring participant wearing a virtual reality headset">
+        <img src="/img/thumbs/500px/figuring.jpg" class="img-fluid easeload" onload="this.style.opacity=1" alt="Thumbnail for Figuring - showing a Figuring participant wearing a virtual reality headset">
       </div>
       <div class="col-7 col-sm-12">
         <div class="portfolio-item-text py-1 py-sm-2 px-2 px-sm-1">
           <h2 class="project-title">Figuring</h2>
-          <p class="project-subtitle"><small>A University of Bristol Production</small></p>
+          <p class="project-subtitle"><small>University of Bristol Production</small></p>
           <p class="project-description-short d-none d-sm-block">bodies, materiality and touch in a multi-person virtual reality</p>
           <p class="project-description">Video documentation of an artistic, scientific and technological project - <i>Figuring</i> - exploring bodies, materiality and touch in multi-person virtual reality.<br>For further details please visit <a href="http://www.figuring-project.com/" target="_blank">figuring-project</a>.</p>
           <p class="project-credits">cinematography by Adam Laity<br>sound design & Foley by Jonathan Eve<br>2018</p>
@@ -190,15 +223,15 @@
     </div>
 </div>
 
-<div class="portfolio-item col-sm-6 col-lg-4 px-0 py-2 px-sm-2">
+<div class="portfolio-item col-sm-6 col-lg-4 px-0 py-2 px-sm-2 filter nature">
     <div class="row no-gutters">
       <div class="col-5 col-sm-12">
-        <img src="/img/thumbs/500px/a-good-news-story.jpg" class="img-fluid" alt="Thumbnail for A Good News Story - showing bats flying in the twilight">
+        <img src="/img/thumbs/500px/a-good-news-story.jpg" class="img-fluid easeload" onload="this.style.opacity=1" alt="Thumbnail for A Good News Story - showing bats flying in the twilight">
       </div>
       <div class="col-7 col-sm-12">
         <div class="portfolio-item-text py-1 py-sm-2 px-2 px-sm-1">
           <h2 class="project-title">A Good News Story</h2>
-          <p class="project-subtitle"><small>A Vincent Wildlife Trust Production</small></p>
+          <p class="project-subtitle"><small>Vincent Wildlife Trust Production</small></p>
           <p class="project-description-short d-none d-sm-block">a conservation project to bring back the greater horseshoe bat to Sussex</p>
           <p class="project-description">A small but significant group of greater horseshoe bats has recently been discovered using this dilapidated building as a maternity roost. This is very exciting as it is the first known breeding population east of its current stronghold in southwest England.</p>
           <p class="project-credits">produced by Hilary Macmillan<br>camera, sound, editing & music by Jonathan Eve<br>2021</p>
@@ -209,15 +242,15 @@
     </div>
 </div>
 
-<div class="portfolio-item col-sm-6 col-lg-4 px-0 py-2 px-sm-2">
+<div class="portfolio-item col-sm-6 col-lg-4 px-0 py-2 px-sm-2 filter nature">
     <div class="row no-gutters">
       <div class="col-5 col-sm-12">
-        <img src="/img/thumbs/500px/wild-in-wales.jpg" class="img-fluid" alt="Thumbnail for Wild in Wales - showing Iolo Williams before a Welsh landscape">
+        <img src="/img/thumbs/500px/wild-in-wales.jpg" class="img-fluid easeload" onload="this.style.opacity=1" alt="Thumbnail for Wild in Wales - showing Iolo Williams before a Welsh landscape">
       </div>
       <div class="col-7 col-sm-12">
         <div class="portfolio-item-text py-1 py-sm-2 px-2 px-sm-1">
           <h2 class="project-title">Wild in Wales</h2>
-          <p class="project-subtitle"><small>A Vincent Wildlife Trust Production</small></p>
+          <p class="project-subtitle"><small>Vincent Wildlife Trust Production</small></p>
           <p class="project-description-short d-none d-sm-block">what has the return of the pine marten meant?</p>
           <p class="project-description">A short documentary about the return of the pine marten to England and Wales. What does this mean to the people who live or work in Wales? Featuring Iolo Williams, naturalist & broadcaster.</p>
           <p class="project-credits">produced by Hilary Macmillan<br>camera & editing by Jonathan Eve<br>2016</p>
@@ -228,15 +261,15 @@
     </div>
 </div>
 
-<div class="portfolio-item col-sm-6 col-lg-4 px-0 py-2 px-sm-2">
+<div class="portfolio-item col-sm-6 col-lg-4 px-0 py-2 px-sm-2 filter nature">
     <div class="row no-gutters">
       <div class="col-5 col-sm-12">
-        <img src="/img/thumbs/500px/wild-again-in-wales.jpg" class="img-fluid" alt="Thumbnail for Wild again in Wales - showing a pine marten">
+        <img src="/img/thumbs/500px/wild-again-in-wales.jpg" class="img-fluid easeload" onload="this.style.opacity=1" alt="Thumbnail for Wild again in Wales - showing a pine marten">
       </div>
       <div class="col-7 col-sm-12">
         <div class="portfolio-item-text py-1 py-sm-2 px-2 px-sm-1">
           <h2 class="project-title">Wild again in Wales</h2>
-          <p class="project-subtitle"><small>A Vincent Wildlife Trust Production</small></p>
+          <p class="project-subtitle"><small>Vincent Wildlife Trust Production</small></p>
           <p class="project-description-short d-none d-sm-block">how the pine marten has successfully returned to Wales</p>
           <p class="project-description">Following a feasibility study and extensive consultation, 51 pine martens were translocated to mid-Wales from Scotland between 2015 and 2017. This has resulted in the re-establishment of a viable marten population, with the population growing in number and range. Wild again in Wales is a summary of the project to date. Featured on Springwatch 2020 on BBC 2.</p>
           <p class="project-credits">produced by Hilary Macmillan<br>camera, sound, editing & music by Jonathan Eve<br>2019</p>
@@ -247,15 +280,15 @@
     </div>
 </div>
 
-<div class="portfolio-item col-sm-6 col-lg-4 px-0 py-2 px-sm-2">
+<div class="portfolio-item col-sm-6 col-lg-4 px-0 py-2 px-sm-2 filter art">
     <div class="row no-gutters">
       <div class="col-5 col-sm-12">
-        <img src="/img/thumbs/500px/motion-equals-emotion.jpg" class="img-fluid" alt="Thumbnail for Motion equals Emotion - showing Rusty Squid working on their V3 robot">
+        <img src="/img/thumbs/500px/motion-equals-emotion.jpg" class="img-fluid easeload" onload="this.style.opacity=1" alt="Thumbnail for Motion equals Emotion - showing Rusty Squid working on their V3 robot">
       </div>
       <div class="col-7 col-sm-12">
         <div class="portfolio-item-text py-1 py-sm-2 px-2 px-sm-1">
           <h2 class="project-title">Motion Equals Emotion</h2>
-          <p class="project-subtitle"><small>A Jonathan Eve Production</small></p>
+          <p class="project-subtitle"><small>Jonathan Eve Production</small></p>
           <p class="project-description-short d-none d-sm-block">an introduction to robotic art</p>
           <p class="project-description">David McGoran, a robotic engineer and designer tells the story of Rusty Squid, a studio for robotic art and design, based in Bristol. This film was nominated for the 'Our City' competition in Bristol.</p>
           <p class="project-credits">voice-over by David McGoran<br>camera, sound, editing & music by Jonathan Eve<br>additional footage by James Dalby and Adam Laity<br>2018</p>
@@ -266,15 +299,15 @@
     </div>
 </div>
 
-<div class="portfolio-item col-sm-6 col-lg-4 px-0 py-2 px-sm-2">
+<div class="portfolio-item col-sm-6 col-lg-4 px-0 py-2 px-sm-2 filter documentary">
     <div class="row no-gutters">
       <div class="col-5 col-sm-12">
-        <img src="/img/thumbs/500px/bristol-around-the-clock.jpg" class="img-fluid" alt="Thumbnail for Bristol - Around the Clock - showing a sunrise over Bristol's Floating Harbour">
+        <img src="/img/thumbs/500px/bristol-around-the-clock.jpg" class="img-fluid easeload" onload="this.style.opacity=1" alt="Thumbnail for Bristol - Around the Clock - showing a sunrise over Bristol's Floating Harbour">
       </div>
       <div class="col-7 col-sm-12">
         <div class="portfolio-item-text py-1 py-sm-2 px-2 px-sm-1">
           <h2 class="project-title">Bristol - Around the Clock</h2>
-          <p class="project-subtitle"><small>A Jonathan Eve Production</small></p>
+          <p class="project-subtitle"><small>Jonathan Eve Production</small></p>
           <p class="project-description-short d-none d-sm-block">the city from dawn till late in 90 seconds</p>
           <p class="project-description">Scenes of people and places in Bristol, from dawn till late. This film was nominated for the 'Our City' competition in Bristol.</p>
           <p class="project-credits">camera, sound, editing & music by Jonathan Eve<br>2017</p>
@@ -285,15 +318,15 @@
     </div>
 </div>
 
-<div class="portfolio-item col-sm-6 col-lg-4 px-0 py-2 px-sm-2">
+<div class="portfolio-item col-sm-6 col-lg-4 px-0 py-2 px-sm-2 filter art">
     <div class="row no-gutters">
       <div class="col-5 col-sm-12">
-        <img src="/img/thumbs/500px/heart-in-your-hands.jpg" class="img-fluid" alt="Thumbnail for Heart in Your Hands - showing a close-up of a robotic heart cradled in someone's hands">
+        <img src="/img/thumbs/500px/heart-in-your-hands.jpg" class="img-fluid easeload" onload="this.style.opacity=1" alt="Thumbnail for Heart in Your Hands - showing a close-up of a robotic heart cradled in someone's hands">
       </div>
       <div class="col-7 col-sm-12">
         <div class="portfolio-item-text py-1 py-sm-2 px-2 px-sm-1">
           <h2 class="project-title">Heart in Your Hands</h2>
-          <p class="project-subtitle"><small>A Rusty Squid Production</small></p>
+          <p class="project-subtitle"><small>Rusty Squid Production</small></p>
           <p class="project-description-short d-none d-sm-block">robotic hearts that beat to your heart rate</p>
           <p class="project-description">Documentary on the design and fabrication of robotic hearts. This film will be released later this year.</p>
           <p class="project-credits">directed by David McGoran<br>cinematography by Adam Laity <br>editing & original music by Jonathan Eve</p>
@@ -304,15 +337,15 @@
     </div>
 </div>
 
-<div class="portfolio-item col-sm-6 col-lg-4 px-0 py-2 px-sm-2">
+<div class="portfolio-item col-sm-6 col-lg-4 px-0 py-2 px-sm-2 filter experimental">
     <div class="row no-gutters">
       <div class="col-5 col-sm-12">
-        <img src="/img/thumbs/500px/connectivity-scene3-reel2.jpg" class="img-fluid" alt="Thumbnail for Connectivity - showing horses looking over a sunlit field">
+        <img src="/img/thumbs/500px/connectivity-scene3-reel2.jpg" class="img-fluid easeload" onload="this.style.opacity=1" alt="Thumbnail for Connectivity - showing horses looking over a sunlit field">
       </div>
       <div class="col-7 col-sm-12">
         <div class="portfolio-item-text py-1 py-sm-2 px-2 px-sm-1">
           <h2 class="project-title">Connectivity</h2>
-          <p class="project-subtitle"><small>A Jonathan Eve Production</small></p>
+          <p class="project-subtitle"><small>Jonathan Eve Production</small></p>
           <p class="project-description-short d-none d-sm-block">an immersion into the connections between living things</p>
           <p class="project-description">Originally created as a video installation, two screens facing each other held an audience enclosed in a moment of connectivity between pairs of living beings, separated by a vast stretch of space. Music made from found sounds taken directly from their environments (<a href="https://vimeo.com/298600495/" target="_blank">documentation video</a>).</p>
           <p class="project-credits">camera, sound, editing & music by Jonathan Eve<br>2015</p>
@@ -323,15 +356,15 @@
     </div>
 </div>
 
-<div class="portfolio-item col-sm-6 col-lg-4 px-0 py-2 px-sm-2">
+<div class="portfolio-item col-sm-6 col-lg-4 px-0 py-2 px-sm-2 filter experimental">
     <div class="row no-gutters">
       <div class="col-5 col-sm-12">
-        <img src="/img/thumbs/500px/drowning-in-an-automated-sea.jpg" class="img-fluid" alt="Thumbnail for Drowning in an Automated Sea - showing a moody view of the sea and a rock">
+        <img src="/img/thumbs/500px/drowning-in-an-automated-sea.jpg" class="img-fluid easeload" onload="this.style.opacity=1" alt="Thumbnail for Drowning in an Automated Sea - showing a moody view of the sea and a rock">
       </div>
       <div class="col-7 col-sm-12">
         <div class="portfolio-item-text py-1 py-sm-2 px-2 px-sm-1">
           <h2 class="project-title">Drowning in an Automated Sea</h2>
-          <p class="project-subtitle"><small>A Jonathan Eve Production</small></p>
+          <p class="project-subtitle"><small>Jonathan Eve Production</small></p>
           <p class="project-description-short d-none d-sm-block">music video shot on 16mm Bolex</p>
           <p class="project-description">Scenes between Aberystwyth and Aberaeron, shot on a spring-wound 16mm Bolex, developed and digitised at the University of Aberystwyth. Music: <i>Drowning in an automated sea</i> by calm!<br><a href="https://moonsidetapes.bandcamp.com/album/sunken-hum/" target="_blank">go to album on bandcamp</a>.</p>
           <p class="project-credits">camera & editing by Jonathan Eve<br>special thanks to Greg Bevan & Aberystwyth University TFTS alumni access scheme<br>2018</p>
@@ -342,19 +375,57 @@
     </div>
 </div>
 
-<div class="portfolio-item col-sm-6 col-lg-4 px-0 py-2 px-sm-2">
+<div class="portfolio-item col-sm-6 col-lg-4 px-0 py-2 px-sm-2 filter experimental">
     <div class="row no-gutters">
       <div class="col-5 col-sm-12">
-        <img src="/img/thumbs/500px/exploring-time.jpg" class="img-fluid" alt="Thumbnail for Exploring Time - showing a figure standing before a reflective stretch of water">
+        <img src="/img/thumbs/500px/exploring-time.jpg" class="img-fluid easeload" onload="this.style.opacity=1" alt="Thumbnail for Exploring Time - showing a figure standing before a reflective stretch of water">
       </div>
       <div class="col-7 col-sm-12">
         <div class="portfolio-item-text py-1 py-sm-2 px-2 px-sm-1">
           <h2 class="project-title">Exploring Time</h2>
-          <p class="project-subtitle"><small>A Jonathan Eve Production</small></p>
+          <p class="project-subtitle"><small>Jonathan Eve Production</small></p>
           <p class="project-description-short d-none d-sm-block">a reflection on time, space and memory</p>
           <p class="project-description">An experimental reflection on time, space and memory.</p>
           <p class="project-credits">camera, sound, editing & music by Jonathan Eve<br>2015</p>
           <a class="project-content" data-aspect-ratio="16by9" href="https://vimeo.com/132607721">Link to video</a>
+        </div>
+      </div>
+      <a class="stretched-link" data-toggle="modal" data-target="#previewModal" href="#"></a>
+    </div>
+</div>
+
+<div class="portfolio-item col-sm-6 col-lg-4 px-0 py-2 px-sm-2 filter educational">
+    <div class="row no-gutters">
+      <div class="col-5 col-sm-12">
+        <img src="/img/thumbs/500px/ratlab-warm-up.jpg" class="img-fluid easeload" onload="this.style.opacity=1" alt="Thumbnail for RATLab Warm-up - showing Ronnie the pig">
+      </div>
+      <div class="col-7 col-sm-12">
+        <div class="portfolio-item-text py-1 py-sm-2 px-2 px-sm-1">
+          <h2 class="project-title">RATLab - Warm-up</h2>
+          <p class="project-subtitle"><small>Green Ginger Production</small></p>
+          <p class="project-description-short d-none d-sm-block">accompanying film for young person's theatre show</p>
+          <p class="project-description">Can too much exercise be bad for us? Do different activities need different ways to warm up?</p>
+          <p class="project-credits">written and directed by Chris Pirie<br>camera by Adam Laity<br>sound, editing and music by Jonathan Eve</p>
+          <a class="project-content" data-aspect-ratio="16by9" href="https://youtu.be/sUGbWDl8fGE">Link to video</a>
+        </div>
+      </div>
+      <a class="stretched-link" data-toggle="modal" data-target="#previewModal" href="#"></a>
+    </div>
+</div>
+
+<div class="portfolio-item col-sm-6 col-lg-4 px-0 py-2 px-sm-2 filter educational">
+    <div class="row no-gutters">
+      <div class="col-5 col-sm-12">
+        <img src="/img/thumbs/500px/ratlab-everyday-engines.jpg" class="img-fluid easeload" onload="this.style.opacity=1" alt="Thumbnail for RATLab Everyday Engines - showing Ronnie the pig">
+      </div>
+      <div class="col-7 col-sm-12">
+        <div class="portfolio-item-text py-1 py-sm-2 px-2 px-sm-1">
+          <h2 class="project-title">RATLab - Everyday Engines</h2>
+          <p class="project-subtitle"><small>Green Ginger Production</small></p>
+          <p class="project-description-short d-none d-sm-block">accompanying film for young person's theatre show</p>
+          <p class="project-description">Think about your daily routine. What do you do? What do you use? Which everyday objects surrounding you now do you think have been engineered?</p>
+          <p class="project-credits">written and directed by Chris Pirie<br>camera by Adam Laity<br>sound, editing and music by Jonathan Eve</p>
+          <a class="project-content" data-aspect-ratio="16by9" href="https://youtu.be/AUD4mWHa__k">Link to video</a>
         </div>
       </div>
       <a class="stretched-link" data-toggle="modal" data-target="#previewModal" href="#"></a>
@@ -554,7 +625,7 @@
   <!-- Copyright -->
   <!-- TODO: add automatic date in python code -->
   <div class="footer-copyright text-center my-5 muted-colour">
-    <small>Copyright © 2022 Jonathan Eve &middot; <a href="privacy-policy.html" target="_blank">Privacy Policy</a> </small>
+    <small>Copyright © 2023 Jonathan Eve &middot; <a href="privacy-policy.html" target="_blank">Privacy Policy</a> </small>
   </div>
 
 </footer>
@@ -620,9 +691,9 @@
   </div>
 
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
 
   <!-- Website scripts -->
   <script src="js/script.js"></script>

@@ -4,32 +4,6 @@ $(document).ready(function() {
     'use strict';
 
 
-    // // make hash URLs update like real page
-    // var url = location.href.replace(/\/$/, "");
-    //
-    // if (location.hash) {
-    //     var hash = url.split("#");
-    //     $('#myTab a[href="#' + hash[1] + '"]').tab("show");
-    //     url = location.href.replace(/\/#/, "#");
-    //     history.replaceState(null, null, url);
-    //     setTimeout(function () {
-    //         $(window).scrollTop(0);
-    //     }, 0);
-    // }
-    //
-    // $('a[data-toggle="tab"]').on("click", function () {
-    //     var newUrl;
-    //     var hash = $(this).attr("href");
-    //
-    //     if (hash == "#home") {
-    //         newUrl = url.split("#")[0];
-    //     } else {
-    //         newUrl = url.split("#")[0] + hash;
-    //     }
-    //
-    //     history.replaceState(null, null, newUrl);
-    // });
-
     var anchor = window.location.hash;
     $("a[href=\"".concat(anchor, "\"]")).tab('show');
 
@@ -169,6 +143,29 @@ $(document).ready(function() {
 
         $(this).children().toggleClass('d-none not-hidden');
 
+    });
+
+
+
+    //function to fade in portfolio images
+    // $(".easeload").onload(function() {
+    //     $(this).css('opacity', 1);
+    // });
+
+
+    // Function for filtering the portoflio gallery
+    $(".filter-button").click(function () {
+        var value = $(this).attr('data-filter');
+
+        if (value == "all") {
+            // $('.filter').collapse('show');
+            $('.filter').removeClass('d-none');
+        }
+        else {
+
+            $(".filter").not('.' + value).addClass('d-none');
+            $('.filter').filter('.' + value).removeClass('d-none');
+        }
     });
 
 
